@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="LaunchTerminalSettingsDialog">
+		<item key="terminalLabel" value="Powershell"/>
 		<section name="SettingsPanelControl">
 			<section name="Git Bash">
+				<item key="encoding" value="UTF-8"/>
+			</section>
+			<section name="Local Terminal">
+				<item key="encoding" value="UTF-8"/>
+			</section>
+			<section name="io.openliberty.tools.eclipse.ui.terminal.local.devmode.launcher.delegate.label">
+				<item key="encoding" value="UTF-8"/>
+			</section>
+			<section name="Powershell">
+				<item key="encoding" value="UTF-8"/>
 			</section>
 		</section>
 	</section>

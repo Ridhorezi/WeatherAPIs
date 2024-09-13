@@ -1,0 +1,86 @@
+package com.weatherapi.weatherforecast.realtime;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Date;
+
+import com.weatherapi.weatherforecast.common.RealtimeWeather;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.annotation.Rollback;
+
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = Replace.NONE)
+@Rollback(false)
+public class RealtimeWeatherRepositoryTests {
+
+	@Autowired
+	private RealtimeWeatherRepository repo;
+
+	@Test
+	public void testUpdateRealtimeWeather() {
+
+		String locationCode = "NYC_USA";
+
+		RealtimeWeather realtimeWeather = repo.findById(locationCode).get();
+
+		realtimeWeather.setTemperature(-2);
+		realtimeWeather.setHumidity(32);
+		realtimeWeather.setPrecipitation(42);
+		realtimeWeather.setStatus("Snowy");
+		realtimeWeather.setWindSpeed(17);
+		realtimeWeather.setLastUpdatedDtm(new Date());
+
+		RealtimeWeather updatedRealtimeWeather = repo.save(realtimeWeather);
+
+		assertThat(updatedRealtimeWeather.getTemperature()).isEqualTo(-2);
+	}
+
+	@Test
+	public void testFindByCountryAndCityCodeNotFound() {
+
+		String countryCode = "JP";
+		String cityName = "Tokyo";
+
+		RealtimeWeather realtimeWeather = repo.findByCountryCodeAndCity(countryCode, cityName);
+
+		assertThat(realtimeWeather).isNull();
+	}
+
+	@Test
+	public void testFindByCountryAndCityCodeFound() {
+
+		String countryCode = "ID";
+		String cityName = "Jakarta";
+
+		RealtimeWeather realtimeWeather = repo.findByCountryCodeAndCity(countryCode, cityName);
+
+		assertThat(realtimeWeather).isNotNull();
+		assertThat(realtimeWeather.getLocation().getCityName()).isEqualTo(cityName);
+	}
+	
+	@Test
+	public void testFindByLocationCodeNotFound() {
+		
+		String locationCode = "NOT-FOUND";
+		
+		RealtimeWeather realtimeWeather = repo.findByLocationCode(locationCode);
+		
+		assertThat(realtimeWeather).isNull();
+	}
+	
+	@Test
+	public void testFindBYLocationCodeFound() {
+		
+		String locationCode = "JKT";
+		
+		RealtimeWeather realtimeWeather = repo.findByLocationCode(locationCode);
+		
+		assertThat(realtimeWeather).isNotNull();
+		assertThat(realtimeWeather.getLocationCode()).isEqualTo(locationCode);
+	}
+}
