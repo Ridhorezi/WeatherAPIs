@@ -1,0 +1,5 @@
+package com.weatherapi.weatherforecast;
+
+public class IP2LocationTests {
+
+}

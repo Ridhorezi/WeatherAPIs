@@ -1,0 +1,3 @@
+ANSI_support_keep_stderr_color=false
+eclipse.preferences.version=1
+org.eclipse.ui.console.P_CONSOLE_WORD_WRAP=true

@@ -1,0 +1,6 @@
+package com.weatherapi.weatherforecast;
+
+public class IP2LocationTests {
+
+	private String dBPathString = "ip2locdb/IP2LOCATION-LITE-DB3.BIN";
+}

@@ -1,0 +1,7 @@
+
+ø
+java:S1845"½Rename field "LOGGER" to prevent any misunderstanding/clash with field "logger" defined in superclass "org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler".(Ş„‘€şÿÿÿÿ8âš‹ú1HÈRBLOCKERZ
+CODE_SMELL
+_
+java:S1602:",Remove useless curly braces around statement(ì· æ8í¬‹ú1HÉRMINORZ
+CODE_SMELL

@@ -1,0 +1,14 @@
+
+r
+java:S1118":Add a private constructor to hide the implicit public one.(Æ†ê‹şÿÿÿÿ8äŸÀ‚€2H­RMAJORZ
+CODE_SMELL
+„
+java:S3008
+"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆà×8äŸÀ‚€2H¬RMINORZ
+CODE_SMELL
+o
+java:S2629"7Use the built-in formatting to construct this argument.(¾ûöÚúÿÿÿÿ8±Ç‚€2H®RMAJORZ
+CODE_SMELL
+y
+java:S3457"AFormat specifiers should be used instead of string concatenation.(¾ûöÚúÿÿÿÿ8±Ç‚€2H«RMAJORZ
+CODE_SMELL
