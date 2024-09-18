@@ -1,8 +1,11 @@
 package com.weatherapi.weatherforecast.realtime;
 
+import java.util.Date;
+
 import com.weatherapi.weatherforecast.common.Location;
 import com.weatherapi.weatherforecast.common.RealtimeWeather;
 import com.weatherapi.weatherforecast.location.LocationNotFoundException;
+import com.weatherapi.weatherforecast.location.LocationRepository;
 
 import org.springframework.stereotype.Service;
 
@@ -10,10 +13,13 @@ import org.springframework.stereotype.Service;
 public class RealtimeWeatherService {
 
 	private RealtimeWeatherRepository realtimeWeatherRepository;
+	private LocationRepository locationRepository;
 
-	public RealtimeWeatherService(RealtimeWeatherRepository realtimeWeatherRepository) {
+	public RealtimeWeatherService(RealtimeWeatherRepository realtimeWeatherRepository,
+			LocationRepository locationRepository) {
 		super();
 		this.realtimeWeatherRepository = realtimeWeatherRepository;
+		this.locationRepository = locationRepository;
 	}
 
 	public RealtimeWeather getByLocation(Location location) throws LocationNotFoundException {
@@ -30,7 +36,7 @@ public class RealtimeWeatherService {
 
 		return realtimeWeather;
 	}
-	
+
 	public RealtimeWeather getByLocationCode(String locationCode) throws LocationNotFoundException {
 
 		RealtimeWeather realtimeWeather = realtimeWeatherRepository.findByLocationCode(locationCode);
@@ -41,5 +47,31 @@ public class RealtimeWeatherService {
 		}
 
 		return realtimeWeather;
+	}
+
+	public RealtimeWeather update(String locationCode, RealtimeWeather realtimeWeather)
+			throws LocationNotFoundException {
+
+		Location location = locationRepository.findByCode(locationCode);
+
+		if (location == null) {
+
+			throw new LocationNotFoundException("No location found with the given code: " + locationCode);
+		}
+
+		if (location.getRealtimeWeather() == null) {
+			
+			location.setRealtimeWeather(realtimeWeather);
+			
+			Location updatedLocation = locationRepository.save(location);
+			
+			return updatedLocation.getRealtimeWeather();
+		}
+
+		realtimeWeather.setLocation(location);
+
+		realtimeWeather.setLastUpdatedDtm(new Date());
+
+		return realtimeWeatherRepository.save(realtimeWeather);
 	}
 }

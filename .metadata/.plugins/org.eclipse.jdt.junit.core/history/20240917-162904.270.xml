@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RealtimeWeatherApiControllerTests.testUpdateShouldReturn404NotFound" project="WeatherApiService" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.541" displayname="RealtimeWeatherApiControllerTests" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]">
+    <testcase name="testUpdateShouldReturn404NotFound" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.541" displayname="testUpdateShouldReturn404NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testUpdateShouldReturn404NotFound()]">
+      <failure>java.lang.AssertionError: Status expected:&lt;404&gt; but was:&lt;500&gt;&#13;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)&#13;
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)&#13;
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests.testUpdateShouldReturn404NotFound(RealtimeWeatherApiControllerTests.java:190)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

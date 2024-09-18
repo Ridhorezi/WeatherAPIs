@@ -1,7 +1,16 @@
 
 ‰
-java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂòúÅùÿÿÿÿ8Ìãü‚€2H€RMINORZ
+java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂòúÅùÿÿÿÿ8Ìãü‚€2H»RMINORZ
+CODE_SMELL
+a
+java:S1452I"&Remove usage of generic wildcard type.(şíÕ–ûÿÿÿÿ8íŠÁ‚€2HºRCRITICALZ
+CODE_SMELL
+a
+java:S1452\"&Remove usage of generic wildcard type.(—öŞûÿÿÿÿ8üÒõŸ2H¼RCRITICALZ
 CODE_SMELL
 \
-java:S1452)"&Remove usage of generic wildcard type.(ˆËÄÁ8íŠÁ‚€2HRCRITICALZ
+java:S1452,"&Remove usage of generic wildcard type.(ˆËÄÁ8Ü‚¸Ó2H¹RCRITICALZ
+CODE_SMELL
+s
+java:S1481`";Remove this unused "updatedRealtimeWeather" local variable.(­‰Õ’üÿÿÿÿ8öÌŞõŸ2H¿RMINORZ
 CODE_SMELL
