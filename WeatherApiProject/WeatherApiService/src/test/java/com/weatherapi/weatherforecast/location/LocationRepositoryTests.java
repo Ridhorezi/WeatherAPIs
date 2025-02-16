@@ -2,9 +2,11 @@ package com.weatherapi.weatherforecast.location;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.weatherapi.weatherforecast.common.HourlyWeather;
 import com.weatherapi.weatherforecast.common.Location;
 import com.weatherapi.weatherforecast.common.RealtimeWeather;
 
@@ -114,5 +116,55 @@ public class LocationRepositoryTests {
 		Location updateLocation = repository.save(location);
 
 		assertThat(updateLocation.getRealtimeWeather().getLocationCode()).isEqualTo(code);
+	}
+
+	@Test
+	public void testAddHourlyWeatherData() {
+
+		Location location = repository.findById("JKT").get();
+
+		List<HourlyWeather> listHourlyWeather = location.getListHourlyWeather();
+
+		HourlyWeather hourlyWeather1 = new HourlyWeather().id(location, 8).temperature(10).precipitation(70)
+				.status("Sunny");
+
+		HourlyWeather hourlyWeather2 = new HourlyWeather().location(location).hourOfDay(9).temperature(10)
+				.precipitation(70).status("Sunny");
+
+		listHourlyWeather.add(hourlyWeather1);
+
+		listHourlyWeather.add(hourlyWeather2);
+
+		Location updatedLocation = repository.save(location);
+
+		assertThat(updatedLocation.getListHourlyWeather()).isNotEmpty();
+	}
+	
+	@Test
+	public void testFindByCountryCodeAndCityNameNotFound() {
+		
+		String countryCode = "NOT-FOUND";
+		
+		String cityName = "NOT-FOUND";
+		
+		Location location = repository.findByCountryCodeAndCityName(countryCode, cityName);
+		
+		assertThat(location).isNull();
+	}
+	
+	@Test
+	public void testFindByCountryCodeAndCityNameFound() {
+		
+		String countryCode = "ID";
+		
+		String cityName = "Jakarta";
+		
+		Location location = repository.findByCountryCodeAndCityName(countryCode, cityName);
+		
+		assertThat(location).isNotNull();
+		
+		assertThat(location.getCountryCode()).isEqualTo(countryCode);
+		
+		assertThat(location.getCityName()).isEqualTo(cityName);
 	}
 }

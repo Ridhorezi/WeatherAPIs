@@ -1,0 +1,5 @@
+package com.weatherapi.weatherforecast.location;
+
+public class LocationDTO {
+
+}

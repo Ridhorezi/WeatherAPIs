@@ -32,6 +32,9 @@
 		<item key="LimitValue" value="10"/>
 		<item key="SkipNull" value="false"/>
 		<item key="ToStringTemplateSelected" value="0"/>
+		<item key="InstanceOf" value="false"/>
+		<item key="Blocks" value="false"/>
+		<item key="Objects.equals &amp; Objects.hash" value="true"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item key="SortOrdering" value="false"/>
@@ -121,11 +124,11 @@
 	<section name="JavaSearchPage">
 		<item key="CASE_SENSITIVE" value="false"/>
 		<item key="INCLUDE_MASK" value="11"/>
-		<item key="HISTORY_SIZE" value="2"/>
+		<item key="HISTORY_SIZE" value="4"/>
 		<section name="HISTORY0">
 			<item key="searchFor" value="1"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="getIP"/>
+			<item key="pattern" value="&quot;NYC_USA&quot;"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -137,6 +140,30 @@
 		<section name="HISTORY1">
 			<item key="searchFor" value="1"/>
 			<item key="scope" value="0"/>
+			<item key="pattern" value="NYC_USA"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY2">
+			<item key="searchFor" value="1"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="getIP"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item key="searchFor" value="1"/>
+			<item key="scope" value="0"/>
 			<item key="pattern" value="getIPAddress"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
@@ -146,5 +173,12 @@
 			<list key="workingSets">
 			</list>
 		</section>
+	</section>
+	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
+		<item key="DIALOG_X_ORIGIN" value="432"/>
+		<item key="DIALOG_Y_ORIGIN" value="52"/>
+		<item key="DIALOG_WIDTH" value="588"/>
+		<item key="DIALOG_HEIGHT" value="607"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

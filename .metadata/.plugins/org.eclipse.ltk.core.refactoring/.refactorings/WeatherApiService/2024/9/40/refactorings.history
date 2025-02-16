@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract constant &apos;X_CURRENT_HOUR&apos; from expression &apos;&quot;X-Current-Hour&quot;&apos;&#x0D;&#x0A;- Original project: &apos;WeatherApiService&apos;&#x0D;&#x0A;- Constant name: &apos;X_CURRENT_HOUR&apos;&#x0D;&#x0A;- Constant expression: &apos;&quot;X-Current-Hour&quot;&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Replace occurrences of expression with constant" description="Extract constant &apos;X_CURRENT_HOUR&apos;" flags="786432" id="org.eclipse.jdt.ui.extract.constant" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.weatherapi.weatherforecast.hourly{HourlyWeatherApiControllerTests.java" name="X_CURRENT_HOUR" qualify="false" replace="true" selection="1566 16" stamp="1727604886883" version="1.0" visibility="2"/>
+</session>

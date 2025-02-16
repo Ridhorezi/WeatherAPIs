@@ -1,13 +1,16 @@
 
-a
-java:S1452D"&Remove usage of generic wildcard type.( œŠ¦ÿÿÿÿÿ8´Õ‚ù1H©RCRITICALZ
-CODE_SMELL
 \
-java:S1452*"&Remove usage of generic wildcard type.(ƒÛğ¶8‹…Éù1HªRCRITICALZ
-CODE_SMELL
-\
-java:S14527"&Remove usage of generic wildcard type.(ÈË‰Í8‡œÑù1H¨RCRITICALZ
+java:S1452."&Remove usage of generic wildcard type.(ƒÛğ¶8´Õ‚ù1HŠ'RCRITICALZ
 CODE_SMELL
 a
-java:S1452S"&Remove usage of generic wildcard type.(¹ÕóÖúÿÿÿÿ8¾¸Üù1H§RCRITICALZ
+java:S1452H"&Remove usage of generic wildcard type.(°ÔÏÓúÿÿÿÿ8¾¸Üù1H‰'RCRITICALZ
+CODE_SMELL
+a
+java:S1452W"&Remove usage of generic wildcard type.(¹ÕóÖúÿÿÿÿ8‹…Éù1HŒ'RCRITICALZ
+CODE_SMELL
+\
+java:S1452;"&Remove usage of generic wildcard type.(ÈË‰Í8‡œÑù1H‹'RCRITICALZ
+CODE_SMELL
+p
+java:S1612f"=Replace this lambda with method reference 'this::entity2DTO'.(ˆºÔ8„ãÃïĞ2H’'RMINORZ
 CODE_SMELL

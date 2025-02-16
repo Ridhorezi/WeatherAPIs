@@ -1,0 +1,11 @@
+
+
+java:S1128
+"GRemove this unused import 'org.hibernate.validator.constraints.Length'.(Ê—œªÿÿÿÿÿ8ÙˆñïĞ2H›'RMINORZ
+CODE_SMELL
+}
+java:S1128"JRemove this unused import 'com.fasterxml.jackson.annotation.JsonProperty'.(ËÃ§Ï8ÙˆñïĞ2H™'RMINORZ
+CODE_SMELL
+{
+java:S1128"CRemove this unused import 'jakarta.validation.constraints.NotNull'.(Àª•ıÿÿÿÿ8ÙˆñïĞ2H'RMINORZ
+CODE_SMELL

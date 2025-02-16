@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RealtimeWeatherApiControllerTests" project="WeatherApiService" tests="8" started="8" failures="1" errors="0" ignored="0">
+  <testsuite name="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.639" displayname="RealtimeWeatherApiControllerTests" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]">
+    <testcase name="testGetShouldReturnStatus200OK" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.284" displayname="testGetShouldReturnStatus200OK()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testGetShouldReturnStatus200OK()]"/>
+    <testcase name="testGetByLocationCodeShouldReturnStatus200OK" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.022" displayname="testGetByLocationCodeShouldReturnStatus200OK()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testGetByLocationCodeShouldReturnStatus200OK()]"/>
+    <testcase name="testUpdateShouldReturn200OK" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.182" displayname="testUpdateShouldReturn200OK()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testUpdateShouldReturn200OK()]"/>
+    <testcase name="testGetShouldReturnStatus400BadRequest" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.036" displayname="testGetShouldReturnStatus400BadRequest()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testGetShouldReturnStatus400BadRequest()]"/>
+    <testcase name="testGetByLocationCodeShouldReturnStatus404NotFound" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.024" displayname="testGetByLocationCodeShouldReturnStatus404NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testGetByLocationCodeShouldReturnStatus404NotFound()]"/>
+    <testcase name="testUpdateShouldReturn400BadRequest" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.031" displayname="testUpdateShouldReturn400BadRequest()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testUpdateShouldReturn400BadRequest()]"/>
+    <testcase name="testUpdateShouldReturn404NotFound" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.024" displayname="testUpdateShouldReturn404NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testUpdateShouldReturn404NotFound()]">
+      <failure>java.lang.AssertionError: Status expected:&lt;404&gt; but was:&lt;500&gt;&#13;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)&#13;
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)&#13;
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests.testUpdateShouldReturn404NotFound(RealtimeWeatherApiControllerTests.java:191)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testGetShouldReturnStatus404NotFound" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.01" displayname="testGetShouldReturnStatus404NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testGetShouldReturnStatus404NotFound()]"/>
+  </testsuite>
+</testrun>

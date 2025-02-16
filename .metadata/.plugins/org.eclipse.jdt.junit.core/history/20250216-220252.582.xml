@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RealtimeWeatherApiControllerTests.testGetShouldReturnStatus404NotFound" project="WeatherApiService" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.815" displayname="RealtimeWeatherApiControllerTests" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]">
+    <testcase name="testGetShouldReturnStatus404NotFound" classname="com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests" time="0.815" displayname="testGetShouldReturnStatus404NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests]/[method:testGetShouldReturnStatus404NotFound()]">
+      <failure>java.lang.AssertionError: JSON path "$.errors[0]"&#13;
+Expected: is "No location found with the given country code: NOT-FOUND and city name: NOT-FOUND"&#13;
+     but: was null&#13;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)&#13;
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)&#13;
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.weatherapi.weatherforecast.realtime.RealtimeWeatherApiControllerTests.testGetShouldReturnStatus404NotFound(RealtimeWeatherApiControllerTests.java:68)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

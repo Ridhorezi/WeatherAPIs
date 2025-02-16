@@ -61,51 +61,28 @@ public class RealtimeWeatherApiController {
 			LOGGER.error(ex.getMessage(), ex);
 
 			return ResponseEntity.badRequest().build();
-
-		} catch (LocationNotFoundException ex) {
-
-			LOGGER.error(ex.getMessage(), ex);
-
-			return ResponseEntity.notFound().build();
 		}
 	}
 
 	@GetMapping("/{locationCode}")
 	public ResponseEntity<?> getRealtimeWeatherByLocationCode(@PathVariable("locationCode") String locationCode) {
 
-		try {
+		RealtimeWeather realtimeWeather = realtimeWeatherService.getByLocationCode(locationCode);
 
-			RealtimeWeather realtimeWeather = realtimeWeatherService.getByLocationCode(locationCode);
+		return ResponseEntity.ok(entity2DTO(realtimeWeather));
 
-			return ResponseEntity.ok(entity2DTO(realtimeWeather));
-
-		} catch (LocationNotFoundException ex) {
-
-			LOGGER.error(ex.getMessage(), ex);
-
-			return ResponseEntity.notFound().build();
-		}
 	}
 
 	@PutMapping("/{locationCode}")
 	public ResponseEntity<?> updateRealtimeWeather(@PathVariable("locationCode") String locationCode,
 			@RequestBody @Valid RealtimeWeather realtimeWeatherInRequest) {
-		
+
 		realtimeWeatherInRequest.setLocationCode(locationCode);
 
-		try {
+		RealtimeWeather updatedRealtimeWeather = realtimeWeatherService.update(locationCode, realtimeWeatherInRequest);
 
-			RealtimeWeather updatedRealtimeWeather = realtimeWeatherService.update(locationCode,
-					realtimeWeatherInRequest);
+		return ResponseEntity.ok(entity2DTO(updatedRealtimeWeather));
 
-			return ResponseEntity.ok(entity2DTO(updatedRealtimeWeather));
-
-		} catch (LocationNotFoundException ex) {
-
-			LOGGER.error(ex.getMessage(), ex);
-
-			return ResponseEntity.notFound().build();
-		}
 	}
 
 	private RealtimeWeatherDTO entity2DTO(RealtimeWeather realtimeWeather) {
