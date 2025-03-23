@@ -1,13 +1,16 @@
 
+‰
+java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂòúÅùÿÿÿÿ8Ìãü‚€2Hè(RMINORZ
+CODE_SMELL
 a
-java:S1452J"&Remove usage of generic wildcard type.(şíÕ–ûÿÿÿÿ8íŠÁ‚€2HìRCRITICALZ
+java:S1452M"&Remove usage of generic wildcard type.(û±”Ğøÿÿÿÿ8ÜÂ— 2Hê(RCRITICALZ
 CODE_SMELL
 \
-java:S1452-"&Remove usage of generic wildcard type.(ˆËÄÁ8Ü‚¸Ó2HíRCRITICALZ
-CODE_SMELL
-‰
-java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂòúÅùÿÿÿÿ8Ìãü‚€2HîRMINORZ
+java:S1452-"&Remove usage of generic wildcard type.(ˆËÄÁ8Ü‚¸Ó2Hë(RCRITICALZ
 CODE_SMELL
 a
-java:S1452["&Remove usage of generic wildcard type.(û±”Ğøÿÿÿÿ8ÜÂ— 2HïRCRITICALZ
+java:S1452D"&Remove usage of generic wildcard type.(şíÕ–ûÿÿÿÿ8íŠÁ‚€2Hé(RCRITICALZ
+CODE_SMELL
+‘
+java:S1128"^Remove this unused import 'com.weatherapi.weatherforecast.location.LocationNotFoundException'.(¿¨¹¸8¼¿˜ùĞ2Hº*RMINORZ
 CODE_SMELL

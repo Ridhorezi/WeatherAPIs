@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.location.LocationRepository"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
-    <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
-    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.HourlyWeatherRepositoryTests"/>
-    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.location.HourlyWeatherRepository"/>
-    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.common.HourlyWeatherId"/>
-    <fullyQualifiedTypeName name="java.util.Optional"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.CommonUtility"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.location.LocationNotFoundException"/>
     <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.hourly.HourlyWeatherRepository"/>
     <fullyQualifiedTypeName name="org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
@@ -31,14 +18,10 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.core.JsonProcessingException"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.apache.coyote.BadRequestException"/>
     <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.BadRequestException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
@@ -57,7 +40,24 @@
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonPropertyOrder"/>
-    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.common.Location"/>
     <fullyQualifiedTypeName name="org.mockito.Mockito"/>
     <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.location.LocationDTO"/>
+    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.common.Location"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.location.LocationNotFoundException"/>
+    <fullyQualifiedTypeName name="com.weatherapi.weatherforecast.location.LocationRepository"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.HttpStatusCodeException"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.RestClientException"/>
+    <fullyQualifiedTypeName name="org.springframework.web.client.RestClientResponseException"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
+    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatusCode"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="rest.weatherapi.client.location.Location"/>
 </qualifiedTypeNameHistroy>

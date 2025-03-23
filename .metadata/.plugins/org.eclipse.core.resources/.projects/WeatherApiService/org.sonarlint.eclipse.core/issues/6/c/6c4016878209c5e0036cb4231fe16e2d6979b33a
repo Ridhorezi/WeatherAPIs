@@ -1,19 +1,22 @@
 
-\
-java:S1452A"&Remove usage of generic wildcard type.(¸¨Ã²8‘ß®è£2H§%RCRITICALZ
-CODE_SMELL
-q	java:S106†"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8êÕ¦©2H¨%RMAJORZ
-CODE_SMELL
 _
-java:S1602™",Remove useless curly braces around statement(á°ô38Ìê†¦©2H©%RMINORZ
+java:S1602",Remove useless curly braces around statement(á°ô38Ìê†¦©2Hî(RMINORZ
 CODE_SMELL
-l	java:S106‚"9Replace this use of System.out or System.err by a logger.(Ìï¾†8¬–¦¥©2Hª%RMAJORZ
-CODE_SMELL
-l	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(Ùº§â8¸«®¦©2H«%RMAJORZ
+k	java:S106|"9Replace this use of System.out or System.err by a logger.(Ìï¾†8êÕ¦©2Hì(RMAJORZ
 CODE_SMELL
 [
-java:S1452z"&Remove usage of generic wildcard type.(Ñ¿Î8ú¢¾ã¤2H¬%RCRITICALZ
+java:S1452t"&Remove usage of generic wildcard type.(Ñ¿Î8ùÈĞØ¤2Hï(RCRITICALZ
+CODE_SMELL
+l	java:S106‚"9Replace this use of System.out or System.err by a logger.(Ùº§â8¬–¦¥©2Hğ(RMAJORZ
+CODE_SMELL
+q	java:S106€"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¸«®¦©2Hò(RMAJORZ
+CODE_SMELL
+\
+java:S1452A"&Remove usage of generic wildcard type.(¸¨Ã²8‘ß®è£2Hñ(RCRITICALZ
 CODE_SMELL
 [
-java:S1452_"&Remove usage of generic wildcard type.(Û×.8ùÈĞØ¤2H­%RCRITICALZ
+java:S1452\"&Remove usage of generic wildcard type.(Û×.8ú¢¾ã¤2Hí(RCRITICALZ
+CODE_SMELL
+‘
+java:S1128"^Remove this unused import 'com.weatherapi.weatherforecast.location.LocationNotFoundException'.(¿¨¹¸8’¶úĞ2Hı+RMINORZ
 CODE_SMELL

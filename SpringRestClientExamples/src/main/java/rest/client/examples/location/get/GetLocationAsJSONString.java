@@ -1,0 +1,35 @@
+package rest.client.examples.location.get;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
+
+
+public class GetLocationAsJSONString {
+
+	public static void main(String[] args) {
+		String requestURI = "http://localhost:8085/v1/locations/{code}";
+		
+		Map<String, String> params = new HashMap<>();
+		
+		params.put("code", "JKT");
+		
+		RestTemplate restTemplate = new RestTemplate();
+		
+		ResponseEntity<String> response = restTemplate.getForEntity(requestURI, String.class, params);
+		
+		HttpStatusCode statusCode = response.getStatusCode();
+		
+		System.out.println("Response status code: " + statusCode);
+		
+		if (statusCode.value() == HttpStatus.OK.value()) {
+			String body = response.getBody();
+			System.out.println(body);
+		}
+	}
+
+}

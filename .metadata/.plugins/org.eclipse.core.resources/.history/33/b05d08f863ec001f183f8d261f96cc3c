@@ -1,8 +1,0 @@
-package com.weatherapi.weatherforecast.location;
-
-public class LocationNotFoundException extends Exception {
-
-	public LocationNotFoundException(String locationCode) {
-		super("No location found with the given code: " + locationCode);
-	}
-}

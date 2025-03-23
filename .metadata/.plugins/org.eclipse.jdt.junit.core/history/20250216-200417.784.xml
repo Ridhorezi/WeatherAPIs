@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="LocationApiControllerTests.testDeleteShouldReturn404NotFound" project="WeatherApiService" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.weatherapi.weatherforecast.location.LocationApiControllerTests" time="0.211" displayname="LocationApiControllerTests" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.location.LocationApiControllerTests]">
-    <testcase name="testDeleteShouldReturn404NotFound" classname="com.weatherapi.weatherforecast.location.LocationApiControllerTests" time="0.211" displayname="testDeleteShouldReturn404NotFound()" uniqueid="[engine:junit-jupiter]/[class:com.weatherapi.weatherforecast.location.LocationApiControllerTests]/[method:testDeleteShouldReturn404NotFound()]"/>
-  </testsuite>
-</testrun>

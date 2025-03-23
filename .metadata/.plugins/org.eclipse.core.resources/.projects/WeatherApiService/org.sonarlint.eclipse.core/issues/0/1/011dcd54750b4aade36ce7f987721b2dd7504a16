@@ -1,16 +1,19 @@
 
-\
-java:S1452."&Remove usage of generic wildcard type.(ƒÛğ¶8´Õ‚ù1HŠ'RCRITICALZ
-CODE_SMELL
 a
-java:S1452H"&Remove usage of generic wildcard type.(°ÔÏÓúÿÿÿÿ8¾¸Üù1H‰'RCRITICALZ
-CODE_SMELL
-a
-java:S1452W"&Remove usage of generic wildcard type.(¹ÕóÖúÿÿÿÿ8‹…Éù1HŒ'RCRITICALZ
-CODE_SMELL
-\
-java:S1452;"&Remove usage of generic wildcard type.(ÈË‰Í8‡œÑù1H‹'RCRITICALZ
+java:S1452C"&Remove usage of generic wildcard type.(°ÔÏÓúÿÿÿÿ8¾¸Üù1Há(RCRITICALZ
 CODE_SMELL
 p
-java:S1612f"=Replace this lambda with method reference 'this::entity2DTO'.(ˆºÔ8„ãÃïĞ2H’'RMINORZ
+java:S1612T"=Replace this lambda with method reference 'this::entity2DTO'.(ˆºÔ8„ãÃïĞ2Hä(RMINORZ
+CODE_SMELL
+…
+java:S6204T"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ˆºÔ8¯ŸÌõĞ2Hç(RMAJORZ
+CODE_SMELL
+\
+java:S1452;"&Remove usage of generic wildcard type.(ÈË‰Í8‡œÑù1Hâ(RCRITICALZ
+CODE_SMELL
+a
+java:S1452K"&Remove usage of generic wildcard type.(¹ÕóÖúÿÿÿÿ8‹…Éù1Hæ(RCRITICALZ
+CODE_SMELL
+\
+java:S1452."&Remove usage of generic wildcard type.(ƒÛğ¶8´Õ‚ù1Hã(RCRITICALZ
 CODE_SMELL
